@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en" class="preload">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Butthan &mdash; So Close To Me</title>
+    <meta name="description" content="">
+
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>Butthan So Close To Me</h1>
+
+    <ul>
+        <li><button type="button" class="js-player" data-audio-file="audio/achilles.ogg">Achilles</button></li>
+        <li><button type="button" class="js-player" data-audio-file="audio/aria.ogg">Aria</button></li>
+        <li><button type="button" class="js-player" data-audio-file="audio/armor-piercing.ogg">Armor Piercing</button></li>
+        <li><button type="button" class="js-player" data-audio-file="audio/car-accident.ogg">Car Accident</button></li>
+        <li><button type="button" class="js-player" data-audio-file="audio/curtains-open.ogg">Curtains Open</button></li>
+        <li><button type="button" class="js-player" data-audio-file="audio/death-rattle.ogg">Death Rattle</button></li>
+        <li><button type="button" class="js-player" data-audio-file="audio/depth-charge.ogg">Depth Charge</button></li>
+        <li><button type="button" class="js-player" data-audio-file="audio/echo-chamber.ogg">Echo Chamber</button></li>
+        <li><button type="button" class="js-player" data-audio-file="audio/espionage.ogg">Espionage</button></li>
+        <li><button type="button" class="js-player" data-audio-file="audio/fade-away.ogg">Fade Away</button></li>
+        <li><button type="button" class="js-player" data-audio-file="audio/falling-down-the-mountain.ogg">Falling Down the Mountain</button></li>
+        <li><button type="button" class="js-player" data-audio-file="audio/gong.ogg">Gong</button></li>
+        <li><button type="button" class="js-player" data-audio-file="audio/guns-at-dawn.ogg">Guns at Dawn</button></li>
+        <li><button type="button" class="js-player" data-audio-file="audio/horizon.ogg">Horizon</button></li>
+        <li><button type="button" class="js-player" data-audio-file="audio/ill-respond-when-i-am-ready.ogg">I'll Respond When I Am Ready</button></li>
+        <li><button type="button" class="js-player" data-audio-file="audio/incoming-fire.ogg">Incoming Fire</button></li>
+        <li><button type="button" class="js-player" data-audio-file="audio/last-gasp.ogg">Last Gasp</button></li>
+        <li><button type="button" class="js-player" data-audio-file="audio/meat-wagon.ogg">Meat Wagon</button></li>
+        <li><button type="button" class="js-player" data-audio-file="audio/memories-of-childhood.ogg">Memories of Childhood</button></li>
+        <li><button type="button" class="js-player" data-audio-file="audio/modesty.ogg">Modesty</button></li>
+        <li><button type="button" class="js-player" data-audio-file="audio/nausea-by-jean-paul-sartre.ogg"><i>Nausea</i> by Jean-Paul Sartre</button></li>
+        <li><button type="button" class="js-player" data-audio-file="audio/petulance.ogg">Petulance</button></li>
+        <li><button type="button" class="js-player" data-audio-file="audio/plaintive-cry.ogg">Plaintive Cry</button></li>
+        <li><button type="button" class="js-player" data-audio-file="audio/question-and-answer.ogg">Question and Answer</button></li>
+        <li><button type="button" class="js-player" data-audio-file="audio/rustler.ogg">Rustler</button></li>
+        <li><button type="button" class="js-player" data-audio-file="audio/shutdown.ogg">Shutdown</button></li>
+        <li><button type="button" class="js-player" data-audio-file="audio/succinct.ogg">Succinct</button></li>
+        <li><button type="button" class="js-player" data-audio-file="audio/tasty-morsel.ogg">Tasty Morsel</button></li>
+        <li><button type="button" class="js-player" data-audio-file="audio/teardrop.ogg">Teardrop</button></li>
+        <li><button type="button" class="js-player" data-audio-file="audio/the-complaint.ogg">The Complaint</button></li>
+        <li><button type="button" class="js-player" data-audio-file="audio/the-door-closes.ogg">The Door Closes</button></li>
+        <li><button type="button" class="js-player" data-audio-file="audio/the-feeling-of-being-watched.ogg">The Feeling of Being Watched</button></li>
+        <li><button type="button" class="js-player" data-audio-file="audio/the-poorly-received-sequel.ogg">The Poorly Received Sequel</button></li>
+        <li><button type="button" class="js-player" data-audio-file="audio/triumph.ogg">Triumph</button></li>
+        <li><button type="button" class="js-player" data-audio-file="audio/wayfarer.ogg">Wayfarer</button></li>
+        <li><button type="button" class="js-player" data-audio-file="audio/who-goes-there.ogg">Who Goes There?</button></li>
+    </ul>
+
+    <footer>
+        <p>Cheers man</p>
+    </footer>
+
+    <script>
+        const players = document.querySelectorAll('.js-player');
+
+        if (players.length) {
+            players.forEach((player) => {
+                player.addEventListener('click', () => {
+                    if (!player.dataset.audioFile) {
+                        return;
+                    }
+
+                    new Audio(player.dataset.audioFile).play();
+                });
+            });
+        }
+    </script>
+</body>
+</html>
+
