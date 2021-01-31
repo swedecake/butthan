@@ -44,12 +44,12 @@
         header p {
             margin-top: 0.25rem;
             font-family: Tangerine;
-            font-size: 3rem;
+            font-size: 2rem;
         }
 
         footer {
             font-family: Tangerine;
-            font-size: 3rem;
+            font-size: 2rem;
             margin-top: 3rem;
         }
 
@@ -131,6 +131,12 @@
 
         .players button:active {
             box-shadow: inset 12px 12px 36px #16100c, inset -12px -12px 36px #54402e;
+        }
+
+        @media screen and (min-width: 32em) {
+            header p, footer p {
+                font-size: 3rem;
+            }
         }
     </style>
 </head>
