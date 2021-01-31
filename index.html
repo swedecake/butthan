@@ -105,13 +105,11 @@
             position: absolute;
             top: calc(100% + 0.25rem);
             left: 50%;
-            width: 6rem;
+            width: 0;
             border-top: 1px solid;
             transform-origin: center center;
-            -webkit-transform: translateX(-50%) scaleX(0);
-            transform: translateX(-50%) scaleX(0);
-            -webkit-transition: -webkit-transform 300ms ease-in-out;
-            transition: transform 300ms ease-in-out;
+            transform: translateX(-50%);
+            transition: width 300ms ease-in-out;
         }
 
         .players button:hover {
@@ -119,8 +117,7 @@
         }
 
         .players button:hover span::after {
-            -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+            width: 6rem;
         }
 
         .players button:focus {
